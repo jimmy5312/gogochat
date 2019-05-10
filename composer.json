@@ -1,0 +1,21 @@
+{
+    "name": "gogochat/laravel-sdk",
+    "description": "GoGo Empire Chat SDK for Laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jimmy Ong"
+        }
+    ],
+    "require": {
+        "php": "^5.4|^7.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GogoChat\\": "src/GogoChat/"
+        }
+    }
+}
