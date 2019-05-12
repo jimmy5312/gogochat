@@ -2,22 +2,12 @@
 
 namespace GogoChat\Http;
 
-/*
-// Base URI is used with relative requests
-    $client= new \GuzzleHttp\Client(['base_uri' => LOCATION_SERVER_URL, 'timeout'  => 5.0]);
-
-    $query = $this->params;
-    $ar_drivers = [];
-    try {
-        $response = $client->request("GET", "location/nearby", ['query'=> $query]);
-*/
 class Client {
     protected $client = null;
     function __construct() {
         $this->client = new \GuzzleHttp\Client([
             // Base URI is used with relative requests
-            // 'base_uri' => 'https://chat.gogoempire.asia',
-            'base_uri' => 'http://gogochat.loc',
+            'base_uri' => 'https://chat.gogoempire.asia',
             // You can set any number of default request options.
             'timeout'  => 5.0,
         ]);
