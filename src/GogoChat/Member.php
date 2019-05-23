@@ -59,7 +59,9 @@ class Member extends BaseObject {
                     $this->$key = $value();
                 }
             }
+            return;
         }
+        throw new \Exception("Unable to transform chat room member into GogoChat\Member object.");
     }
 
     function isClosure($t) {
