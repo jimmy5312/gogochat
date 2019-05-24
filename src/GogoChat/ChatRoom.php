@@ -23,6 +23,7 @@ class ChatRoom extends BaseObject {
      */
     var $members = [];
 
+    var $firebase_room_key = null;
     function __construct($data = []) {
         parent::__construct($data);
 
